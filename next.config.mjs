@@ -12,7 +12,10 @@ const nextConfig = {
   assetPrefix: isGithubPages
     ? "/portfolio-sriom-sharan/"
     : undefined,
-
+   env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubPages
+      ? "/portfolio-sriom-sharan"
+      : "",
   images: {
     unoptimized: isGithubPages,
 
